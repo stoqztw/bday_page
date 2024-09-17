@@ -1,0 +1,16 @@
+{
+  "name": "bday-pages",
+  "version": "1.0.0",
+  "main": "index.js",
+  "homepage": "https://stoqztw.github.io/bday_page",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
