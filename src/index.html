@@ -5,15 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BDAY PAGE</title>
     <link rel="icon" href="icons/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/font_icons.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    test
+    <!-- Подарок -->
+    <div id="gift">
+      <img src="icons/gift.svg" alt="Gift" onclick="showMessage()" />
+    </div>
+
+    <!-- Основное поздравление-->
+    <div id="congrats" style="display: none">
+    <header class="header">
+      <img src="icons/logo.png" alt="Logotype" class="header_logo">
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <img src="img/avatar.png" alt="avatar" class="hero_avatar" />
+          <div class="hero_tittle">С днём рождения!</div>
+          <button class="hero_btn">Поздравляю</span></button>
+        </div>
+      </section>
+
+      <section class="congratulations">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-8">
+              <div class="congratulations_box congratulations_box_first">
+                <img
+                  src="img/happiness.svg"
+                  alt="happiness"
+                  class="congratulations_img congratulations_img_first"
+                />
+                <div class="congratulations_box_text">
+                  <h2 class="congratulations_tittle">счастья</h2>
+                  <div class="congratulations_disc">
+                    Пусть счастье станет твоим постоянным спутником, словно
+                    яркое солнце, которое освещает каждый твой день! Пусть
+                    каждая минута приносит радость и улыбки, а сердце всегда
+                    будет наполнено светом и теплом. Пусть твои мечты сбываются
+                    легко, как теплый летний ветер, и счастье окружает тебя в
+                    каждом мгновении жизни. Желаю, чтобы вокруг были только
+                    добрые люди, вдохновляющие идеи и незабываемые моменты.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 col-lg-8 offset-lg-4 offset-md-2">
+              <div class="congratulations_box congratulations_box_second">
+                <img
+                  src="img/health.svg"
+                  alt="health"
+                  class="congratulations_img congratulations_img_second"
+                />
+                <div class="congratulations_box_text">
+                  <h2 class="congratulations_tittle">здоровья</h2>
+                  <div class="congratulations_disc">
+                    Пусть твоё здоровье всегда будет крепким, как непоколебимая
+                    гора. Желаю тебе неиссякаемой энергии и бодрости, чтобы
+                    каждый новый день встречался с улыбкой и лёгкостью. Пусть
+                    силы и здоровье всегда будут рядом с тобой, помогая
+                    воплощать мечты и преодолевать любые преграды. Наслаждайся
+                    каждым моментом жизни в полном благополучии! Пусть здоровье
+                    станет твоим главным союзником на долгие годы вперёд!
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-8">
+              <div class="congratulations_box congratulations_box_third">
+                <img
+                  src="img/patience.svg"
+                  alt="patience"
+                  class="congratulations_img congratulations_img_third"
+                />
+                <div class="congratulations_box_text">
+                  <h2 class="congratulations_tittle">терпения</h2>
+                  <div class="congratulations_disc">
+                    Желаю тебе безграничного терпения, как тихая река, которая
+                    всегда находит свой путь к цели, несмотря на преграды. Пусть
+                    сила твоего духа помогает тебе спокойно и уверенно
+                    преодолевать все жизненные испытания, сохраняя внутренний
+                    баланс. Желаю тебе стойкости в достижении целей, ведь
+                    терпение всегда вознаграждается успехом и радостью. Пусть
+                    каждый шаг к мечте будет осознанным, а результаты —
+                    вдохновляющими. С терпением ты способна на всё!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="row footer_wrapper_top">
+            <div class="col-sm-1 col-lg-2 col-md-1">
+              <img
+                src="icons/logo.png"
+                alt="Logotype Stoqz"
+                class="footer_logo"
+              />
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 offset-sm-7 offset-lg-8 offset-md-8">
+              <div class="footer_socialmedia_wrapper">
+                <a
+                  href="https://github.com/stoqztw"
+                  class="footer_socialmedia_link"
+                >
+                <i class="fa-brands fa-github fa-2xl"></i>
+                </a>
+                <a
+                  href="https://t.me/artfen1aas"
+                  class="footer_socialmedia_link"
+                >
+                <i class="fa-brands fa-telegram fa-2xl"></i>
+                </a>
+                <a
+                  href="https://www.behance.net/atsushiSq"
+                  class="footer_socialmedia_link"
+                >
+                  <i class="fa-brands fa-square-behance fa-2xl"></i>
+                </a>
+                <a
+                  href="https://x.com/atsushiSq"
+                  class="footer_socialmedia_link"
+                >
+                <i class="fa-brands fa-square-x-twitter fa-2xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_devider"></div>
+          <div class="row footer_wrapper_bottom">
+            <h2 class="footer_tittle">copyright © 2024 All right reserved</h2>
+            <h3 class="footer_subtittle">by stoqz</h3>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <!-- </div> -->
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4a62a6ebca.js" crossorigin="anonymous"></script>
   </body>
 </html>
