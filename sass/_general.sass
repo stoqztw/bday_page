@@ -1,0 +1,157 @@
+*
+	font-family: 'Inter', sans-serif
+
+body
+	background-color: #216BB5
+	position: relative
+	#gift
+		width: 100%
+		height: 100%
+		padding: 20%
+		transition: opacity 1s ease
+		animation: wiggle 2s linear infinite
+		@keyframes wiggle
+			0%, 7%
+				transform: rotateZ(0)
+
+			15%
+				transform: rotateZ(-15deg)
+
+			20%
+				transform: rotateZ(10deg)
+
+			25%
+				transform: rotateZ(-10deg)
+
+			30%
+				transform: rotateZ(6deg)
+
+			35%
+				transform: rotateZ(-4deg)
+
+			40%, 100%
+				transform: rotateZ(0)
+		img
+			display: block
+			width: 234px
+			height: 227px
+			cursor: pointer
+			margin: auto auto
+
+a
+	text-decoration: none
+
+.container
+	max-width: 1140px
+
+.header
+	position: absolute
+	z-index: 2
+
+.hero
+	position: relative
+	height: 1182px
+	padding: 185px 0 114px 0
+	background: url('../img/main_bg.png') center (center / cover) no-repeat
+	&_avatar
+		position: absolute
+		width: 278px
+		height: 287px
+		left: 49%
+		top: 352px
+		transform: translateX(-50%)
+	&_tittle
+		display: block
+		width: 748px
+		margin: 444px auto 0 auto
+		color: rgb(253, 229, 236)
+		font-size: 118px
+		font-weight: 900
+		line-height: 118px
+		text-align: center
+		text-transform: uppercase
+	&_btn
+		display: block
+		margin: 54px auto 0 auto
+		width: 192px
+		height: 56px
+		border: none
+		box-sizing: border-box
+		border: 2px solid rgb(253, 229, 236)
+		background: rgba(217, 217, 217, 0)
+		color: rgb(253, 229, 236)
+		font-size: 20px
+		font-weight: 600
+		line-height: 22px
+		text-transform: uppercase
+		transition: all 0.2s ease
+		&:hover
+			color: #216BB5
+			background-color: #FDE5EC
+			transition: all 0.2s ease
+
+.congratulations
+	padding: 112px 0 136px 0
+	background-color: white
+	&_box
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&_text
+			display: block
+			width: 464px
+			height: 224px
+		&_second, &_third
+			margin-top: 138px
+	&_img
+		&_first
+			width: 218px
+			height: 327px
+	&_tittle
+		color: rgb(33, 107, 181)
+		font-size: 36px
+		font-weight: 700
+		line-height: 44px
+		text-transform: uppercase
+	&_disc
+		color: rgb(33, 107, 181)
+		font-size: 16px
+		font-weight: 400
+		line-height: 20px
+
+.footer
+	background-color: #36474F
+	&_logo
+		width: 85px
+		height: 85px
+	&_wrapper
+		&_top
+			align-items: center
+		&_bottom
+	&_socialmedia
+		&_wrapper
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&_link
+			color: #DCE2EB
+			transition: all 0.2s ease
+			&:hover
+				color: #216BB5
+				transition: all 0.2s ease
+
+	&_devider
+		display: block
+		margin: 0 auto
+		background-color: #D9D9D9
+		width: 100%
+		height: 1px
+	&_tittle, &_subtittle
+		color: rgb(220, 226, 235)
+		font-size: 12px
+		font-weight: 700
+		line-height: 14px
+		text-align: center
+		text-transform: uppercase
+	&_tittle
+		margin-top: 16px
